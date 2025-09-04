@@ -26,11 +26,11 @@ templ() {
 }
 
 readConfig() {
-    _values=$(getConfig argocd.values)
+    _values=$(getConfig cilium.values)
     if [ "$_values" != "" ]; then
         VALUES=$_values
     fi
-    _version=$(getConfig argocd.version)
+    _version=$(getConfig cilium.version)
     if [ "$_version" != "" ]; then
         VERSION=$_version
     fi
