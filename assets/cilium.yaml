@@ -1,0 +1,12 @@
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  name: cilium
+  namespace: default
+spec:
+  name: cilium
+  chart: cilium
+  repo: https://helm.cilium.io/
+  valuesContent: |-
+    @VALUES@
+  version: "@VERSION@"
